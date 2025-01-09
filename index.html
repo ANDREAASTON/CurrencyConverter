@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KWACHA TO DOLLAR CONVERTER</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+        <header class="header"><h1>CURRENCY CONVERTER</h1></header>
+        <div>
+            <label for="resultDisplay"><input type="text" id="resultDisplay" value="0" class="display" readonly></label>
+        </div>
+        <button type="button" onclick="clear1()">Clear</button>
+
+        <div class="kwacha">
+            <h2>KWACHA-TO-DOLLAR</h2>
+            <label for="kwacha">KWACHA: <input type="number" min="0" id="kwacha" value="0" oninput="currencyConvert()" ></label>
+        </div>
+        
+        <div class="dollar">
+            <h2>DOLLAR-TO-KWACHA</h2>
+            <label for="dollar">DOLLAR: <input type="number" min="0" id="dollar" value="0" oninput="currencyConvert2()"></label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
